@@ -1,10 +1,18 @@
 #import "@preview/glossy:0.9.1": glossary, init-glossary, theme-academic
 
-#let myGlossary = (
-  bethe-weizsäcker: (
+#let definitionen = (
+  gruppe: (
     short: "Bethe-Weizäcker",
+    description: "pimmel",
+    group: "Definitionen und Sätze",
+  ),
+)
+
+#let sätze = (
+  bethe-weizsäcker: (
+    short: "Bethe-Weizäcker2",
     description: "Eine Formel zur Beschreibung der Bindungsenergie eines Kerns.",
-    group: "Formeln und Sätze",
+    group: "Definitionen und Sätze",
   ),
 )
 

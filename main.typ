@@ -6,9 +6,9 @@
 #import "@preview/meander:0.4.1"
 #import "@preview/glossy:0.9.1": *
 
-#import "content/glossary.typ": myGlossary
+#import "content/glossary.typ": definitionen, sätze
 
-#show: init-glossary.with(myGlossary)
+#show: init-glossary.with(definitionen, sätze)
 
 #set page(fill: rgb("#1e1e1e"))
 #set text(fill: rgb("#d0d0d0"))
