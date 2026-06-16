@@ -1,0 +1,43 @@
+#import "@preview/pubmatter:0.2.1": open-access-link, show-abstract-block, show-authors, show-affiliations, show-title
+//#import "front-matter.typ": fm
+#import "@preview/scienceicons:0.1.0": open-access-icon
+
+#smallcaps[#text(font: "Noto Sans", gray)[Open Access]] #open-access-icon(color: orange, height: 1.1em, baseline: 20%) //#open-access-link()
+
+#align(horizon, text(17pt)[
+  #align(center)[
+    #smallcaps[Algebra I und Algebra II \ ein Lernskript] 
+  ]
+])
+#align(bottom)[
+  #align(center)[
+    #smallcaps[#text(gray)[Tim Niklas Lorenz]]
+  ]
+]
+#set page(footer: [
+  #align(center,
+    text(
+      size: 13pt,
+      font: "Linux Libertine"
+    )[
+      #smallcaps[#text(gray)[Tim Niklas Lorenz]]
+    ]
+  )
+])
+
+/*#align(horizon, text(17pt)[
+  #align(center)[
+    #show-title(fm)
+    #smallcaps[#show-authors(fm)]
+    #show-affiliations(fm)
+    #show-abstract-block(fm)
+  ]
+])
+
+#figure(
+  image("../assets/7-300x300.png", width: 33.3%),
+)*/
+
+
+
+
