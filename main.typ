@@ -17,20 +17,5 @@
 #pagebreak()
 #include "prelude/toc.typ"
 #pagebreak()
-#include "content/test.typ"
+#include "content/content.typ"
 #pagebreak()
-#include "content/glossary.typ"
-
-#glossary(
-  title: "Sachverzeichnis",
-  theme: theme-academic,
-  sort: true,
-  ignore-case: false,
-  show-all: true,
-)
-
-
-
-
-
-
