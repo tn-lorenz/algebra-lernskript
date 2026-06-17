@@ -6,6 +6,7 @@ This text is meant to give a brief overview over certain algebraic topics. Defin
 - Dominique Mattei, _Algebra II: Lecture Notes for the Summer Semester 2026_, Institute of Algebraic Geometry, Leibniz University Hannover.
 - Wikipedia
 - Gerd Fischer, _Lehrbuch der Algebra_ (4th ed.)
+- The [stacks archive](https://stacks.math.columbia.edu/)
 
 and possibly the Bosch one.
 
