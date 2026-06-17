@@ -9,4 +9,4 @@ This text is meant to give a brief overview over certain algebraic topics. Defin
 
 and possibly the Bosch one.
 
-This work is licensed under the [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
+This work is licensed under the [CC-BY-NC-4.0](https://creativecommons.org/licenses/by-nc/4.0/)
