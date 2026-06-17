@@ -2,17 +2,11 @@
 #import "@preview/great-theorems:0.1.2": *
 #import "@preview/rich-counters:0.2.2": *
 
+
+#set heading(numbering: "1.1")
+#show: great-theorems-init
+
 = Grundbegriffe
-
-#let mathcounter = rich-counter(
-  identifier: "mathblocks",
-  inherited_levels: 1,
-)
-
-#let definition2 = mathblock(
-  blocktitle: hi[Definition],
-  counter: mathcounter,
-)
 
 #definition(title: "Halbgruppe")[
   \ Eine #hi[_Halbgruppe_] ist eine Menge $H$, versehen mit einer inneren, zweistelligen Verknüpfung $compose$, also ein Paar $(H, compose)$ mit
@@ -27,7 +21,7 @@
   \ Ein #hi[_Monoid_] ist eine #link(<def-halbgruppe>)[Halbgruppe] nach @def-halbgruppe über eine Menge $M$, für welche zusätzlich das _eindeutig bestimmte_ neutrale Element $e_M$ existiert, das heißt es gilt
   $ forall m in M exists! e_M in M: m compose e_M = e_M compose m = m $
 ] <def-monoid>
-Definition
+
 #definition(title: "Gruppe")[
   \ Eine #hi[_Gruppe_] ist ein #link(<def-monoid>)[Monoid] nach @def-monoid über eine Menge $G$, für welchen zusätzlich zu jedem Element $g$ aus $G$ das eindeutig bestimmte Inverse $g^(-1)$ existiert. \ \ Zusammenfassend ist eine Gruppe also eine Menge $G$ versehen mit einer #hi[inneren], #hi[zweistelligen] Verknüpfung $compose$, also ein Paar $(G, compose)$ mit \
   $ compose: G times G -> G, quad (a, b) |-> a compose b $

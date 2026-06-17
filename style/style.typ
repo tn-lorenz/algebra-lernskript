@@ -42,8 +42,8 @@
 ])
 #set text(lang: "de", font: "Inter") // font: "Inter" | "IBM Plex Sans" | "Source Sans 3" | "Manrope"
 
-#set heading(numbering: "1.1")
-#show: great-theorems-init
+// #set heading(numbering: "1.1")
+// #show: great-theorems-init
 
 #show link: text.with(fill: central-col)
 
