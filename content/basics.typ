@@ -3,8 +3,18 @@
 #import "@preview/rich-counters:0.2.2": *
 
 
+#set text(lang: "de", font: "Inter")
 #set heading(numbering: "1.1")
 #show: great-theorems-init
+
+#set page(header: [
+  #align(center, text(
+    size: 13pt,
+    font: "Linux Libertine",
+  )[
+    #smallcaps[#text(gray)[Tim Niklas Lorenz]]
+  ])
+])
 
 = Grundbegriffe
 

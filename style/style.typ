@@ -32,16 +32,7 @@
 #let central-col = acc-col21
 #let hi(body) = text(central-col)[#body]
 
-#set page(header: [
-  #align(center, text(
-    size: 13pt,
-    font: "Linux Libertine",
-  )[
-    #smallcaps[#text(gray)[Tim Niklas Lorenz]]
-  ])
-])
-#set text(lang: "de", font: "Inter") // font: "Inter" | "IBM Plex Sans" | "Source Sans 3" | "Manrope"
-
+// font: "Inter" | "IBM Plex Sans" | "Source Sans 3" | "Manrope"
 // #set heading(numbering: "1.1")
 // #show: great-theorems-init
 
