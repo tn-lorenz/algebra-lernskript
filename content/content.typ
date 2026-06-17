@@ -18,4 +18,6 @@
 
 #include "basics.typ"
 #pagebreak()
+#include "groups.typ"
+#pagebreak()
 #include "glossary.typ"

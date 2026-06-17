@@ -85,6 +85,3 @@
   Ein #hi[_unitärer Modul_] $M$ ist ein #link(<def-modul>)[Modul], wobei für $R$ das eindeutig bestimmte Einselement $1_R$ existiert.
 ]
 
-
-#pagebreak()
-= awd
