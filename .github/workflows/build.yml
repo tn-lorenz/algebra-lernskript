@@ -1,4 +1,4 @@
-name: Build & Upload
+name: Build
 
 on:
   push:
@@ -30,13 +30,18 @@ jobs:
           sudo mv typst-x86_64-unknown-linux-musl/typst /usr/local/bin/typst
           typst --version
 
+      - name: Generate version file
+        run: |
+          BUILD_DATE=$(TZ=Europe/Berlin date +%Y%m%d)
+          echo "#let version = \"v0.1.$BUILD_DATE\"" > version.typ
+
       - name: Render PDF
         run: |
           mkdir -p public
           typst compile \
             --font-path assets/fonts \
             main.typ \
-            public/main.pdf
+            public/algebra-lernskript.pdf
 
       - name: Create index page
         run: |
@@ -45,14 +50,20 @@ jobs:
           <html>
             <head>
               <meta charset="utf-8">
-              <title>PDF Download</title>
+              <title>Algebra Lernskript</title>
             </head>
             <body>
-              <h1>PDF Download</h1>
-              <p><a href="main.pdf">16gb of extra RAM</a></p>
+              <h1>Algebra Lernskript</h1>
+              <p><a href="algebra-lernskript.pdf">Download 16gb of free DDR5 RAM now!!</a></p>
             </body>
           </html>
           EOF
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: algebra-lernskript-pdf
+          path: public/algebra-lernskript.pdf
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
