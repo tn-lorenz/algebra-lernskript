@@ -4,7 +4,7 @@
   gruppe: (
     short: "Bethe-Weizäcker",
     description: "pimmel",
-    group: "Definitionen und Sätze",
+    group: "Definitionen",
   ),
 )
 
@@ -12,7 +12,7 @@
   bethe-weizsäcker: (
     short: "Bethe-Weizäcker2",
     description: "Eine Formel zur Beschreibung der Bindungsenergie eines Kerns.",
-    group: "Definitionen und Sätze",
+    group: "Sätze",
   ),
 )
 

@@ -7,8 +7,9 @@
 #import "@preview/glossy:0.9.1": *
 
 #import "content/glossary.typ": definitionen, sätze
-
-#show: init-glossary.with(definitionen, sätze)
+#set align(left)
+#show: init-glossary.with(definitionen)
+#show: init-glossary.with(sätze)
 
 #set page(fill: rgb("#1e1e1e"))
 #set text(fill: rgb("#d0d0d0"))
