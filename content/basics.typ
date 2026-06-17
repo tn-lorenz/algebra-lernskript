@@ -1,4 +1,4 @@
-#import "../style/style.typ": central-col, definition, hi, remark
+#import "../style.typ": central-col, definition, hi, remark
 
 = Grundbegriffe
 
