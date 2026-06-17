@@ -1,4 +1,4 @@
-[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-blue.svg)](https://github.com/tn-lorenz/algebra-lernskript/blob/master/LICENSE)
+[![License: CC-BY-NC-4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-blue.svg)](https://github.com/tn-lorenz/algebra-lernskript/blob/master/LICENSE)
 
 This text is meant to give a brief overview over certain algebraic topics. Definitions stem mainly from these sources:
 
