@@ -29,7 +29,7 @@
 #let acc-col23 = rgb(255, 150, 230) // Orchid Pink
 #let acc-col24 = rgb(120, 255, 240) // Aqua Mint
 
-#let central-col = acc-col21
+#let central-col = acc-col
 #let hi(body) = text(central-col)[#body]
 
 // font: "Inter" | "IBM Plex Sans" | "Source Sans 3" | "Manrope"
@@ -54,7 +54,7 @@
 )
 
 #let lemma = mathblock(
-  blocktitle: "Lemma",
+  blocktitle: hi[Lemma],
   counter: mathcounter,
 )
 
@@ -69,3 +69,11 @@
 #let proof = proofblock(
   prefix: hi[_Beweis._],
 )
+
+#let axioms(body) = {
+  align(center, block[
+    #set align(left)
+    #set enum(numbering: "(i)")
+    #body
+  ])
+}

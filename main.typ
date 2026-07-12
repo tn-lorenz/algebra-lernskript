@@ -6,13 +6,18 @@
 #import "@preview/meander:0.4.1"
 #import "@preview/glossy:0.9.1": *
 
-#import "content/glossary.typ": definitionen, sätze
+#import "content/glossary.typ": definitionen // sätze
+
+#set text(lang: "de", font: "Courier Prime")
 
 #show: init-glossary.with(definitionen)
-#show: init-glossary.with(sätze)
+// #show: init-glossary.with(sätze)
+#show heading.where(level: 1): it => align(center)[
+  #it
+]
 
-#set page(fill: rgb("#1e1e1e"))
-#set text(fill: rgb("#d0d0d0"))
+// #set page(fill: rgb("#1e1e1e"))
+// #set text(fill: rgb("#d0d0d0"))
 
 #include "prelude/front-page.typ"
 #pagebreak()

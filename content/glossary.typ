@@ -3,16 +3,8 @@
 #let definitionen = (
   gruppe: (
     short: "Bethe-Weizäcker",
-    description: "pimmel",
+    description: "Test",
     group: "Definitionen",
-  ),
-)
-
-#let sätze = (
-  bethe-weizsäcker: (
-    short: "Bethe-Weizäcker2",
-    description: "Eine Formel zur Beschreibung der Bindungsenergie eines Kerns.",
-    group: "Sätze",
   ),
 )
 
