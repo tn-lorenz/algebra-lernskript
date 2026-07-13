@@ -78,7 +78,7 @@ Ideale sind in Ringen das Äquivalent zu Normalteilern in Gruppen. Sie erlauben 
 ]
 
 #theorem[
-  Sind $A$ ein kommutativer Ring und $frak(p) subset A$ ein Primideal, so ist genau dann $A\/frak(p)$ nullteilerfrei, also ein Integritätsbereich.
+  Sei $A$ ein kommutativer Ring und $frak(p) subset.eq A$ ein Ideal. Dann ist $frak(p)$ genau dann ein Primideal, wenn der Quotientenring $A \/ frak(p)$ nullteilerfrei ist, also ein Integritätsbereich.
 ]
 
 #definition(title: "Maximalideal")[
