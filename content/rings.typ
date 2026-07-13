@@ -33,12 +33,23 @@
 Ideale sind in Ringen das Äquivalent zu Normalteilern in Gruppen. Sie erlauben es, die Struktur durch die Bildung von Quotientenringen zu vereinfachen.
 
 #definition(title: "Ideal")[
-  \ Sei $A$ ein kommutativer Ring. Eine Teilmenge $I subset A$ heißt (beidseitiges) #hi[_Ideal_] von $A$, wenn gilt
+  \ Sei $R$ ein Ring. Eine Teilmenge $I subset.eq R$ heißt #hi[_Ideal_] (genauer: #hi[_beidseitiges Ideal_]) von $R$, wenn gilt
   #axioms[
-    + $(I, +)$ ist eine #link(<def-gruppe-abelsch>)[additive Untergruppe] von $(A, +)$ \
-    + $ forall r in R forall a in I: r dot a in I and a dot r in I $
+    + $(I, +)$ ist eine #link(<def-gruppe-abelsch>)[additive Untergruppe] von $(R, +)$ \
+    + $forall r in R forall i in I: r dot i in I and i dot r in I$
   ]
+
+  In einem nicht-kommutativen Ring unterscheidet man außerdem zwischen #hi[_Linksidealen_] und #hi[_Rechtsidealen_]. Hierfür ersetzt man Bedingung (ii) durch
+  #align(center)[
+    $
+      #text("(ii.L)", font: "Courier Prime") & forall r in R forall i in I: r dot i in I \
+      #text("(ii.R)", font: "Courier Prime") & forall r in R forall i in I: i dot r in I.
+    $
+  ]
+
+  Ein Linksideal erfüllt also (i) und (ii.L), ein Rechtsideal (i) und (ii.R). Ein beidseitiges Ideal erfüllt beide Bedingungen. Ist $R$ kommutativ, so sind (ii.L) und (ii.R) äquivalent; daher spricht man in diesem Fall einfach von einem Ideal.
 ] <def-ideal>
+
 
 #remark[
   Nach dem Untergruppenkriterium ist (i) äquivalent zu der Bedingung, dass gilt: $ forall a, b in I: a - b in I $
